@@ -15,7 +15,7 @@ public class SqAreaTest {
     }
 
     @Test
-    public void whenP4K1ThenS2() {
+    public void whenP4K1ThenS1() {
         double p = 4;
         double k = 1;
         double expected = 1;
@@ -24,7 +24,7 @@ public class SqAreaTest {
     }
 
     @Test
-    public void whenP8K2ThenS2() {
+    public void whenP8K2ThenS3dot55() {
         double p = 8;
         double k = 2;
         double expected = 3.55;
