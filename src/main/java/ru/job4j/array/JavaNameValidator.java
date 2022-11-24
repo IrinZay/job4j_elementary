@@ -5,11 +5,12 @@ public class JavaNameValidator {
         if (name.isEmpty()) {
             return false;
         }
-        for (int i = 0; i < name.length(); i++) {
+        if (Character.isDigit(name.codePointAt(0))
+                || Character.isUpperCase(name.codePointAt(0))) {
+            return false;
+        }
+        for (int i = 1; i < name.length(); i++) {
             int code = name.codePointAt(i);
-            if (i == 0 && (Character.isDigit(code) || Character.isUpperCase(code))) {
-                return false;
-            }
             if (!isSpecialSymbol(code) && !isUpperLatinLetter(code)
                 && !isLowerLatinLetter(code) && !Character.isDigit(code)) {
                 return false;
