@@ -16,8 +16,8 @@ public class Converter {
         boolean passEuro = euro == expectedEuro;
         System.out.println("140 rubles are " + euro + " euro." + "Test result: " + passEuro);
         float dollar = Converter.rubleToDollar(120);
-        float expextedDollar = 2;
-        boolean passDollar = dollar == expextedDollar;
+        float expectedDollar = 2;
+        boolean passDollar = dollar == expectedDollar;
         System.out.println("120 rubles are " + dollar + " dollars." + "Test result: " + passDollar);
     }
 }
